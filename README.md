@@ -25,8 +25,8 @@ As a pickleball newbie, I  experienced the frustrations of coordinating matches 
 
 # 💌 Attributions 
 * # images
-* [PickleTimeLogo](https://www.shutterstock.com/image-vector/powerful-smash-shot-execution-vector-icon-2376962975)
-* [Pickleball_xl](https://www.self.com/story/basic-pickleball-rules-beginners)
+* [FitfolioLogo](https://www.shopify.com/tools/logo-maker)
+
 * # css
 * [Copy-paste-css](https://copy-paste-css.com/)
 * [Gradient Maker](https://coolors.co/gradient-maker/ddb4f6-8dd0fc)
