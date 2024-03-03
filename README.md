@@ -1,5 +1,5 @@
 # Fitfolio 
-## Where Every Step Tells a Story
+##-Where Every Step Tells a Story
 
 ![Alt Text](./public/images/Unit%202.png)
 *Fitfolio* is an app inspired by platforms like Strava and Alltrails, designed to research and track journeys through both urban landscapes and wilderness adventures. Whether navigating city streets or trekking through nature's wonders, *Fitfolio* aims to capture the joy of exploration and share it with fellow enthusiastic individuals. With its user-friendly interface and collaborative features, *Fitfolio* encourages users to discover new paths, share experiences, and connect with like-minded adventurers, fostering a community united by a passion for discovery and outdoor exploration.
