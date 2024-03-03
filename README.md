@@ -2,14 +2,13 @@
 ## Where Every Step Tells a Story
 
 ![Alt Text](./public/images/Unit%202.png)
-*Pickle Time* is not just an app. It's your ultimate companion for all things pickleball! Whether you're a seasoned player or just picking up a paddle, *Pickle Time* is here to revolutionize the way you schedule matches, connect with friends, and immerse yourself in the vibrant pickleball community.
+*Fitfolio* is an app inspired by platforms like Strava and Alltrails, designed to research and track journeys through both urban landscapes and wilderness adventures. Whether navigating city streets or trekking through nature's wonders, *Fitfolio* aims to capture the joy of exploration and share it with fellow enthusiastic individuals. With its user-friendly interface and collaborative features, *Fitfolio* encourages users to discover new paths, share experiences, and connect with like-minded adventurers, fostering a community united by a passion for discovery and outdoor exploration.
 
-As a pickleball newbie, I  experienced the frustrations of coordinating matches with friends, contacting court venues, and aligning schedules. This led me to create *Pickle Time*, an app which isn't just about planning games; it's a commitment to making every step of the pickleball journey more enjoyable and accessible, ensuring that players, whether new or experienced, can easily connect and share the joy of the game.
+As an adventurous software engineer with a love for both the cityscape and the great outdoors, I relishes the excitement of exploring new streets and winding trails alike, always seeking out hidden treasures and scenic views.
 
 
 
 ## **[It's Pickle Time](https://pickleballtracker.fly.dev)**
-## **[Trello Board](https://trello.com/b/wEddks1y/pickle-ball-tracker)**
 
 # 💻 Technologies used 
 
