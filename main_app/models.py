@@ -8,6 +8,7 @@ class Activity(models.Model):
   city = models.CharField(max_length=20)
   description = models.TextField(max_length=250)
   max_heart_rate = models.IntegerField()
+  activity_type = models.CharField(max_length=20)
 
   def __str__(self):
-    return self.date
+    return self.city

@@ -29,8 +29,8 @@
             alt="A skater boy cat"
           >
         </div>
-        <h2 class="card-title">{{ activity.city }} Activity</h2>
-        {% if activity.avg_heart_rate > 126 %}
+        <h2 class="card-title">A {{ activity.activity_type }} in {{ activity.city }}</h2>
+        {% if activity.max_heart_rate > 126 %}
           <p>You are in orange zone. You burn fat and carbonhydrates in this zone. THE goal is to spend 23-35 min here </p>
         {% else %}
           <p>You will become healthier in this safe zone but not imporve your fitness level.</p>
