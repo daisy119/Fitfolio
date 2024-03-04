@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.views.generic.edit import CreateView
 from .models import Activity
 
 def home(request):
@@ -14,3 +15,10 @@ def activity_index(request):
 def activity_detail(request, activity_id):
   activity = Activity.objects.get(id=activity_id)
   return render(request, 'activities/detail.html', { 'activity': activity })
+
+class ActivityCreate(CreateView):
+  model = Activity
+  fields = '__all__'
+
+
+

@@ -29,8 +29,9 @@
     </div>
     <nav>
       <ul>
-        <li><a href="/activities">All Activities</a></li>
-        <li><a href="/about">About</a></li>
+        <li><a href="{% url 'activity-index' %}">All Activities</a></li>
+        <li><a href="{% url 'activity-create' %}">Add a Activity</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
       </ul>
     </nav>
   </header>

@@ -22,7 +22,7 @@
 <section class="card-container">
   {% for activity in activities %}
     <div class="card">
-      <a href="/activities/{{ activity.id }}">
+      <a href="{% url 'activity-detail' activity.id %}">
       <div class="card-content">
         <div class="card-img-container">
           <img 
@@ -36,7 +36,7 @@
         {% else %}
           <p>You will become healthier in this safe zone but not imporve your fitness level.</p>
         {% endif %}
-        <p><small>{{ cat.description }}</small></p>
+        <p><small>{{ activity.description }}</small></p>
       </div>
     </a>
     </div>
