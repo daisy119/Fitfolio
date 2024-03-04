@@ -1,6 +1,6 @@
 from django.db import models
 from django.urls import reverse
-
+from django.contrib.auth.models import User
 
 ACTIVITY_TYPE = (
   ('W', 'Walk'),
@@ -22,6 +22,7 @@ class Activity(models.Model):
     choices=ACTIVITY_TYPE,
     default=ACTIVITY_TYPE[0][0]
     )
+  user = models.ForeignKey(User, on_delete=models.CASCADE)
 
   def __str__(self):
     return self.activity_type   

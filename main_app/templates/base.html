@@ -29,9 +29,17 @@
     </div>
     <nav>
       <ul>
+        {% if user.is_authenticated %}
+        <li><a href="{% url 'home' %}">Home</a></li>
         <li><a href="{% url 'activity-index' %}">All Activities</a></li>
-        <li><a href="{% url 'activity-create' %}">Add a Activity</a></li>
+        <li><a href="{% url 'activity-create' %}">Add an Activity</a></li>
         <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'logout' %}">Log out</a></li>
+        {% else %}
+        <li><a href="{% url 'home' %}">Log in</a></li>
+        <li><a href="{% url 'signup' %}">Sign Up</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        {% endif %}
       </ul>
     </nav>
   </header>
