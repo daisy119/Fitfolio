@@ -3,6 +3,8 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.contrib.auth.views import LoginView
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Activity
 
 class Home(LoginView):
@@ -11,15 +13,17 @@ class Home(LoginView):
 def about(request):
   return render(request, 'about.html')
 
+@login_required
 def activity_index(request):
-  activities = Activity.objects.all()
+  activities = Activity.objects.filter(user=request.user)
   return render(request, 'activities/index.html', { 'activities': activities })
 
+@login_required
 def activity_detail(request, activity_id):
   activity = Activity.objects.get(id=activity_id)
   return render(request, 'activities/detail.html', { 'activity': activity })
 
-class ActivityCreate(CreateView):
+class ActivityCreate(LoginRequiredMixin, CreateView):
   model = Activity
   fields = ['date', 'duration', 'calorie_burnt', 'distance', 'city', 'description', 'max_heart_rate', 'activity_type']
 
@@ -27,11 +31,11 @@ class ActivityCreate(CreateView):
     form.instance.user = self.request.user  
     return super().form_valid(form)
 
-class ActivityUpdate(UpdateView):
+class ActivityUpdate(LoginRequiredMixin, UpdateView):
   model = Activity
   fields = ['duration', 'description', 'calorie_burnt','distance','city','max_heart_rate','activity_type']
 
-class ActivityDelete(DeleteView):
+class ActivityDelete(LoginRequiredMixin, DeleteView):
   model = Activity
   success_url = '/activities/'
 
