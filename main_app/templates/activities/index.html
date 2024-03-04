@@ -22,6 +22,7 @@
 <section class="card-container">
   {% for activity in activities %}
     <div class="card">
+      <a href="/activities/{{ activity.id }}">
       <div class="card-content">
         <div class="card-img-container">
           <img 
@@ -37,6 +38,7 @@
         {% endif %}
         <p><small>{{ cat.description }}</small></p>
       </div>
+    </a>
     </div>
   {% endfor %}
 </section>

@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link 
+  rel="stylesheet" 
+  type="text/css" 
+  href="{% static 'css/activities/activity-detail.css' %}"
+/>
+{% endblock %}
+
+{% block content %}
+
+<section class="activity-container">
+  <div class="activity-img">
+    <img 
+      src="{% static 'images/sk8r-boi-cat.svg' %}" 
+      alt="A skater boy cat"
+    >
+  </div>
+  <div class="activity-details">
+    <h1>A {{ activity.activity_type }} in {{activity.city}}for {{activity.duration}}hr</h1>
+    <h2>You burned {{activity.calorie_burnt}}cal for {{activity.distance}}miles</h2>
+    {% if activity.max_heart_rate > 120  %}
+      <h2>Great job.You burn fat and carbonhydrates ub this zone. The goal is to spend 25-35 min here</h2>
+    {% else %}
+      <h2>This warm up session helps your body increase fat release and prepares for higher intensities.</h2>
+    {% endif %}
+    <p>{{ activity.description }}</p>
+  </div>
+</section>
+
+{% endblock %}
