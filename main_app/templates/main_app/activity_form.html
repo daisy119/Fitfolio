@@ -6,9 +6,12 @@
 {% endblock %}
 
 {% block content %}
-
 <div class="page-header">
-  <h1>Add a ACtivity</h1>
+  {% if activity %}
+    <h1>Edit {{ activity.activity_type }} in {{activity.city}}</h1>
+  {% else %}
+    <h1>Add a Activity</h1>
+  {% endif %}
   <img src="{% static 'images/nerd-cat.svg' %}" alt="A cat using a computer"/>
 </div>
 {% comment %} 

@@ -27,6 +27,10 @@
       <h2>This warm up session helps your body increase fat release and prepares for higher intensities.</h2>
     {% endif %}
     <p>{{ activity.description }}</p>
+    <div class="activity-actions">
+      <a href="{% url 'activity-update' activity.id %}" class="btn warn">Edit</a>
+      <a href="{% url 'activity-delete' activity.id %}" class="btn danger">Delete</a>
+    </div>
   </div>
 </section>
 

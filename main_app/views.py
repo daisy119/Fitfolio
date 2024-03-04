@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Activity
 
 def home(request):
@@ -19,6 +19,14 @@ def activity_detail(request, activity_id):
 class ActivityCreate(CreateView):
   model = Activity
   fields = '__all__'
+
+class ActivityUpdate(UpdateView):
+  model = Activity
+  fields = ['duration', 'description', 'calorie_burnt','distance','city','max_heart_rate','activity_type']
+
+class ActivityDelete(DeleteView):
+  model = Activity
+  success_url = '/activities/'
 
 
 
