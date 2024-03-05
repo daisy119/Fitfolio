@@ -7,19 +7,28 @@
   type="text/css" 
   href="{% static 'css/activities/activity-detail.css' %}"
 />
+<script defer src="{% static 'js/activity-detail.js' %}"></script>
 {% endblock %}
 
 {% block content %}
 
 <section class="activity-container">
   <div class="activity-img">
+    {% if activity.photo.url %}
+    <img 
+      src="{{activity.photo.url}}" 
+      alt="A photo of {{activity.city|title}}"
+      class="usr-img"
+    >
+  {% else %}
     <img 
       src="{% static 'images/sk8r-boi-cat.svg' %}" 
       alt="A skater boy cat"
     >
+  {% endif %}
   </div>
   <div class="activity-details">
-    <h1>A {{ activity.get_activity_type_display  }} in {{activity.city}}for {{activity.duration}}hr</h1>
+    <h1>A {{ activity.get_activity_type_display  }} in {{activity.city|title}}for {{activity.duration}}hr</h1>
     <h2>You burned {{activity.calorie_burnt}}cal for {{activity.distance}}miles</h2>
     {% if activity.max_heart_rate > 120  %}
       <h2>Great job.You burn fat and carbonhydrates ub this zone. The goal is to spend 25-35 min here</h2>
@@ -31,6 +40,20 @@
       <a href="{% url 'activity-update' activity.id %}" class="btn warn">Edit</a>
       <a href="{% url 'activity-delete' activity.id %}" class="btn danger">Delete</a>
     </div>
+    <h3>Change {{activity.city|title}} City {{ activity.get_activity_type_display  }} Photo</h3>
+    <p id="file-name"></p>
+    <form 
+      action="{% url 'add-photo' activity.id %}"
+      enctype="multipart/form-data"
+      method="POST"
+    >
+      {% csrf_token %}
+      <label class="btn secondary">
+        Choose photo
+        <input type="file" name="photo-file" id="file-input">
+      </label>
+      <button type="submit" class="btn submit">Upload Photo</button>
+    </form>
   </div>
 </section>
 

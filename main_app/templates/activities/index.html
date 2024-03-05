@@ -25,10 +25,18 @@
       <a href="{% url 'activity-detail' activity.id %}">
       <div class="card-content">
         <div class="card-img-container">
+          {% if activity.photo.url %}
+          <img 
+            src="{{activity.photo.url}}" 
+            alt="A photo of {{activity.city}}"
+            class="usr-img"
+          >
+        {% else %}
           <img 
             src="{% static 'images/sk8r-boi-cat.svg' %}" 
             alt="A skater boy cat"
           >
+        {% endif %}
         </div>
         <h2 class="card-title">A {{ activity.get_activity_type_display}} in {{ activity.city }}</h2>
         {% if activity.max_heart_rate > 126 %}
