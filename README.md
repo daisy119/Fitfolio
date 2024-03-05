@@ -1,25 +1,30 @@
 # Fitfolio 
-##-Where Every Step Tells a Story
+## Where Every Step Tells a Story
 
 ![Alt Text](./public/images/Unit%202.png)
+
 *Fitfolio* is an app inspired by platforms like Strava and Alltrails, designed to research and track journeys through both urban landscapes and wilderness adventures. Whether navigating city streets or trekking through nature's wonders, *Fitfolio* aims to capture the joy of exploration and share it with fellow enthusiastic individuals. With its user-friendly interface and collaborative features, *Fitfolio* encourages users to discover new paths, share experiences, and connect with like-minded adventurers, fostering a community united by a passion for discovery and outdoor exploration.
 
 As an adventurous software engineer with a love for both the cityscape and the great outdoors, I relishes the excitement of exploring new streets and winding trails alike, always seeking out hidden treasures and scenic views.
 
 
 
-## **[It's Pickle Time](https://pickleballtracker.fly.dev)**
+* ### [Fitfolio](https://pickleballtracker.fly.dev)
+* ### [Whimsical](https://whimsical.com/fitfolio-9gjs8npZunk3R8SeGr2GE4)
 
 # 💻 Technologies used 
 
 * <a>![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)</a>
 * <a>![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)</a>
-* <a>![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)</a>
-* <a> ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)</a>
 * <a>![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)</a>
-* <a>![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)</a>
+* <a>![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)</a>
+* <a>![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)</a>
+* <a>![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)</a>
 * <a>![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)</a>
-* <a>![Nodemon](https://img.shields.io/badge/NODEMON-%23323330.svg?style=for-the-badge&logo=nodemon&logoColor=%BBDEAD)</a>
+* <a>![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)</a>
+* <a>![YAML](https://img.shields.io/badge/yaml-%23ffffff.svg?style=for-the-badge&logo=yaml&logoColor=151515)</a>
+* <a>![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)</a>
+
 
 
 # 💌 Attributions 
