@@ -19,7 +19,7 @@
     >
   </div>
   <div class="activity-details">
-    <h1>A {{ activity.activity_type }} in {{activity.city}}for {{activity.duration}}hr</h1>
+    <h1>A {{ activity.get_activity_type_display  }} in {{activity.city}}for {{activity.duration}}hr</h1>
     <h2>You burned {{activity.calorie_burnt}}cal for {{activity.distance}}miles</h2>
     {% if activity.max_heart_rate > 120  %}
       <h2>Great job.You burn fat and carbonhydrates ub this zone. The goal is to spend 25-35 min here</h2>
