@@ -30,8 +30,10 @@ As an adventurous software engineer with a love for both the cityscape and the g
 # 💌 Attributions 
 * # images
 * [FitfolioLogo](https://www.shopify.com/tools/logo-maker)
+* [image library](https://www.pexels.com/)
 
 * # css
+* [css signup form](https://codepen.io/jbui/pen/xEqWpL)
 * [css typing effect](https://codepen.io/denic/pen/GRoOxbM)
 * [Copy link for contact](https://uiverse.io/Pradeepsaranbishnoi/nice-earwig-94)
 * [Copy-paste-css](https://copy-paste-css.com/)
