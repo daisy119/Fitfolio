@@ -32,6 +32,8 @@ As an adventurous software engineer with a love for both the cityscape and the g
 * [FitfolioLogo](https://www.shopify.com/tools/logo-maker)
 
 * # css
+* [css typing effect](https://codepen.io/denic/pen/GRoOxbM)
+* [Copy link for contact](https://uiverse.io/Pradeepsaranbishnoi/nice-earwig-94)
 * [Copy-paste-css](https://copy-paste-css.com/)
 * [Gradient Maker](https://coolors.co/gradient-maker/ddb4f6-8dd0fc)
 * [Flaticon](https://www.flaticon.com/)

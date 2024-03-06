@@ -9,21 +9,17 @@
 <div class="glass">
 <div class="box">
 <section class="logo-container">
-  {% comment %} <div class="activity-container">
-    <img src="{% static 'images/workoutbear.png' %}" alt="The bear that works out" />
+  <div class="word-container">
+    <h2>Fitfolio</h2><br>
+    <h3 class="typing">Where Every Step Tells a Story. </h3>
   </div>
-  <img 
-    src="{% static 'images/logotype.svg' %}" 
-    alt="Text reads: Cat Collector"
-  /> {% endcomment %}
 </section>
 
 {% if not user.is_authenticated %}
-<section>
+<section> 
   <form action="{% url 'home' %}" method="post" class="login">
-    <h2> Login</h2>
+    <h1> Login</h1>
     <img src="{% static 'images/workoutbear.png' %}" alt="The bear that works out" />
-    <h3>Welcome back Champion! </h3>
     {% csrf_token %}
     {{ form.as_p }}
     <input type="hidden" name="next" value="{{ next }}">
