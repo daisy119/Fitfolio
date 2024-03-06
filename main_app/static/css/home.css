@@ -4,6 +4,28 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   height: 100%;
+
+    /* true coder */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px; 
+}
+
+body:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/beach_running.png") no-repeat center;
+  background-size: cover;
+  z-index: -1;
+  filter: blur(50px);
 }
 
 main > section {
@@ -13,6 +35,17 @@ main > section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.glass{
+
+  width: 90%;
+  height: 700px;
+  background: linear-gradient(to right bottom, rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+  border-radius: 2rem;
+  z-index: 3;
+  backdrop-filter: blur(2rem);
+  box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19); 
 }
 
 .header-logo-container {
@@ -27,12 +60,19 @@ main > section {
   width: 80%;
 }
 
+
 .login {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  /* width: 80%; */
+  height: 700px;
+  padding: 25px 40px;
+  /* margin-bottom: 10px; */
+  left: 50%;
+  bottom: 0;
+  background-color: #FFEBCD;
 }
 
 .login h1 {
@@ -61,6 +101,53 @@ main > section {
   align-self: flex-end;
   margin-right: 0;
   margin-top: 16px;
+}
+
+.box{
+  width: 990px;
+  height: 700px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #FFF;
+  border-radius: 2rem;
+  box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19); 
+}
+
+.logo-container{
+  height: 100%;
+  background: url("../images/beach_running.png") no-repeat center;
+  background-size: cover;
+}
+
+/* .login-form{
+  height: 700px;
+  padding: 25px 40px;
+  padding-bottom: 10px;
+  /* margin-bottom: 10px; */
+  left: 50%;
+  bottom: 0;
+  background-color: #FFEBCD;
+} */
+
+h1{
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+h1:after{
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 50px;
+  border-radius: 2px;
+  background-color: #FFEBCD; 
 }
 
 @media only screen and (min-width: 768px) {

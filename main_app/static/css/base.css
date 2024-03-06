@@ -82,7 +82,7 @@ ul {
 }
 
 main {
-  width: 100%;
+  width: 100%; 
   padding: 0 10px;
 }
 
@@ -304,7 +304,7 @@ img{
 
 .glass{
 
-  width: 60%;
+  width: 70%;
   background: linear-gradient(to right bottom, rgba(255,255,255,0.7),rgba(255,255,255,0.3));
   border-radius: 2rem;
   z-index: 3;
@@ -314,4 +314,9 @@ img{
 
 #fitfolio-logo{
   width: 8%;
+}
+
+.icon{
+  width: 40px;
+  height: auto;
 }
