@@ -4,6 +4,7 @@
   justify-content: center;
   
   flex-wrap: wrap;
+  gap: 20px;
 
 }
 
@@ -13,17 +14,34 @@
   border: solid 1px #C68DE2;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 
-
 }
 
 .card-content {
   padding: 10px;
-  width: 100%;
+  /* width: 100%; */
+
+  width: 24rem;
+  height: 36rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: white;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
 }
 
 .usr-img {
   width: 100%;
   border-radius: var(--card-border-radius);
+
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity .2s ease-out;
 }
 
 .card > a {
@@ -32,16 +50,52 @@
 }
 
 .card h2 {
-  margin: 10px 0;
+  /* margin: 10px 0; */
   font-size: var(--font-xl);
+
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset .3s .3s ease-out;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+
 }
 
 .card p {
   margin: 5px 0;
   font-size: var(--font-reg);
+
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity .1s ease-out;
 }
 
+p {
+  inset: auto auto 80px 30px;
+}
+
+/* :hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset .1s ease-out;
+}
+
+:hover p {
+  opacity: 1;
+  transition: opacity .2s .1s ease-in;
+}
+
+:hover img {
+  transition: opacity .1s ease-in;
+  opacity: 1;
+} */
+
 #default-photo{
-  width: 252px;
-  height: 335px;
+  /* width: 252px;
+  height: 335px; */
+
+  width: 100%;
+  height: 100%;
 }
