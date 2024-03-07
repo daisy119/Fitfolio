@@ -25,9 +25,12 @@
     <button type="submit" class="btn submit">Login</button>
   </form>
 </section>
+{% else %}
+<section>
+<img id="staystrong" src="{% static 'images/staystrong.png' %}" alt="stay strong" /></section>
 {% endif %}
 
-<img id="staystrong" src="{% static 'images/staystrong.png' %}" alt="stay strong" />
+
 
 
 {% comment %} <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
