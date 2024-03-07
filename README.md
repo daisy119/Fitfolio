@@ -11,6 +11,7 @@ As an adventurous software engineer with a love for both the cityscape and the g
 
 * ### [Fitfolio](https://pickleballtracker.fly.dev)
 * ### [Whimsical](https://whimsical.com/fitfolio-9gjs8npZunk3R8SeGr2GE4)
+* ### [Trello Board](https://trello.com/b/NWMZjowN/fitfolio)
 
 # 💻 Technologies used 
 
