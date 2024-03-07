@@ -9,7 +9,9 @@
 
 <div class="page-header">
   <h1>Sign Up</h1>
-  <img src="{% static 'images/nerd-cat.svg' %}" alt="A cat using a computer"/>
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+    <dotlottie-player src="https://lottie.host/2eb85194-b2ce-4f08-91f9-3439fe704c85/WHZ9e0PB0F.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
 </div>
 {% if error_message %}
   <p class="red-text">{{ error_message }}</p>

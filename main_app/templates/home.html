@@ -19,7 +19,6 @@
 <section> 
   <form action="{% url 'home' %}" method="post" class="login">
     <h1> Login</h1>
-    <img src="{% static 'images/workoutbear.png' %}" alt="The bear that works out" />
     {% csrf_token %}
     {{ form.as_p }}
     <input type="hidden" name="next" value="{{ next }}">
@@ -27,6 +26,13 @@
   </form>
 </section>
 {% endif %}
+
+<img id="staystrong" src="{% static 'images/staystrong.png' %}" alt="stay strong" />
+
+
+{% comment %} <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+    <dotlottie-player src="https://lottie.host/846fc0c9-9c15-4dea-90f6-1e982b95a3c9/1EDL2sV51U.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player> {% endcomment %}
 </div>
 </div>
 {% endblock %}

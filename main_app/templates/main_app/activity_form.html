@@ -20,11 +20,13 @@
 {% block content %}
 <div class="page-header">
   {% if activity %}
-    <h1>Edit {{ activity.activity_type }} in {{activity.city}}</h1>
+    <h1><ion-icon name="bicycle-outline"></ion-icon>&nbsp Edit {{ activity.activity_type }} in {{activity.city}}</h1>
   {% else %}
-    <h1>Add a Activity</h1>
+    <h1><ion-icon name="bicycle-outline"></ion-icon>&nbsp Add a Activity</h1>
   {% endif %}
-  <img src="{% static 'images/nerd-cat.svg' %}" alt="A cat using a computer"/>
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+    <dotlottie-player src="https://lottie.host/19e53fe9-9041-46dc-847e-587d5db8aca1/myc419oHCg.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
 </div>
 {% comment %} 
   Leaving the action empty makes the form post to the same url used to display it

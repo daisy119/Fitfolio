@@ -22,16 +22,15 @@ html {
 }
 
 body {
-  background: hsla(36, 100%, 90%, 1);
+  background: hsla(31, 90%, 76%, 1);
 
-  background: linear-gradient(90deg, hsla(36, 100%, 90%, 1) 0%, hsla(43, 100%, 50%, 1) 100%);
-  
-  background: -moz-linear-gradient(90deg, hsla(36, 100%, 90%, 1) 0%, hsla(43, 100%, 50%, 1) 100%);
-  
-  background: -webkit-linear-gradient(90deg, hsla(36, 100%, 90%, 1) 0%, hsla(43, 100%, 50%, 1) 100%);
-  
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFEBCD", endColorstr="#FDB400", GradientType=1 );
+background: linear-gradient(270deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
 
+background: -moz-linear-gradient(270deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
+
+background: -webkit-linear-gradient(270deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#f9c58d", endColorstr="#f492f0", GradientType=1 );
 
   margin: 0;
   display: flex;
@@ -67,12 +66,16 @@ input{
 
 header {
   width: 100%;
-  background: var(--nav-bg-ff); /* rgba(104, 197, 248, .9) */
+  /* background: var(--nav-bg-ff); rgba(104, 197, 248, .9) */
+  background: #FFEBCD; /* rgba(104, 197, 248, .9) */
   border-bottom: var(--borders);
 }
 
 nav {
   margin: 10px;
+
+  position:relative;
+  border: none;
 }
 
 ul {
@@ -92,7 +95,8 @@ h2 {
 
 nav a {
   text-decoration: none;
-  color: var(--text-color);
+  /* color: var(--text-color); */
+  color: #c34bff;
   font-weight: 600;
   font-size: 16px;
 }
@@ -105,23 +109,57 @@ nav ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  padding: 0px 20px;
 }
 
 nav li {
-  padding: 5px 8px;
+  padding: 30px 10px;
+  z-index: 3; 
 }
+
+nav li a {
+  transition: all 0.3s ease 0s;
+}
+
+nav li a:hover,nav li a:focus {
+  color: rgba(51, 51, 51,.6);
+  /* padding:1px; */
+  border-bottom: solid 5px #C68DE2;
+  border-top: solid 5px #C68DE2;
+}
+
+/* nav a::after {
+  content:'12';
+  height: 2px;
+  height: 100%;
+  background: rgb(255, 255, 255); 
+  /* display: block; */
+  position: absolute;
+  /* left:0; */
+  bottom: -20px;  
+  /* opacity: 0;
+  transition: all 0.2s;
+  pointer-events: none; */
+}
+
+nav a:hover::after {
+  opacity: 1;
+} */
+
 
 img{
   width: 25%;
   margin-top: -20px;
 }
 
-.header-logo-container {
+/* .header-logo-container {
   margin: auto;
   padding: 10px 20px 0;
   max-width: 500px;
-}
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly; 
+} */
 
 .page-header {
   display: flex;
@@ -142,7 +180,6 @@ img{
   font-family: inherit;
   margin-right: 10px;
   touch-action: manipulation;
-  /* all: unset; */
   position: relative;
   border-radius: 50px;
   box-shadow: inset 0 -4px 8px #87bfd8, 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -163,37 +200,7 @@ img{
   opacity: 1;
 }
 
-.btn::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-image-source: url("https://csspro.com/css-3d-buttons/buttons-img/mario-button-borders.webp");
-  border-image-slice: 50%;
-  border-image-width: 40px;
-  border-style: solid;
-  transform: scale(1.04, 1.08);
-  opacity: 0;
-  transition-property: opacity;
-  transition-duration: 0.4s;
-  transition-timing-function: cubic-bezier(0.55, 1, 0.15, 1);
-  will-change: transform;
-}
-.btn:focus-visible::after {
-  opacity: 1;
-  animation: pulsate-16 1s infinite;
-}
 
-@keyframes pulsate-16 {
-  0% {
-    transform: scale(1.04, 1.08);
-  }
-  50% {
-    transform: scale(1.08, 1.12);
-  }
-  100% {
-    transform: scale(1.04, 1.08);
-  }
-}
 
 
 .submit {
@@ -277,10 +284,6 @@ img{
     flex-wrap: nowrap;
   }
 
-  .header-logo-container {
-    width: 213px;
-  }
-
   .page-header h1 {
     font-size: var(--font-xtreme);
   }
@@ -296,7 +299,8 @@ img{
 
   @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
     header {
-      background: var(--nav-bg);
+      /* background: var(--nav-bg); */
+      background: #FFEBCD;
       -webkit-backdrop-filter: blur(3px);
       backdrop-filter: blur(3px);
     }
@@ -320,9 +324,12 @@ img{
   nav,
   .header-logo-container {
     margin: 0;
-    background: var(--nav-bg-ff);
-    border: var(--borders);
+    /* background: var(--nav-bg-ff); */
+    background: rgb(255, 235, 205,.6);
+    /* border: var(--borders); */
     border-radius: 18px;
+    /* box-shadow: 20px 40px 40px rgba(51, 51, 51,0.5); */
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
   }
 
   nav {
@@ -333,7 +340,7 @@ img{
     /* visual fix to help align logo */
     padding-top: 6px;
     width: 256px;
-    height: 35px;
+    height: 55px;
   }
 
   @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
@@ -344,7 +351,8 @@ img{
 
     nav,
     .header-logo-container {
-      background: rgba(104, 197, 248, .6);
+      /* background: rgba(104, 197, 248, .6); */
+      background: rgba(198, 141, 226, .6)
       -webkit-backdrop-filter: blur(3px);
       backdrop-filter: blur(3px);
     }
@@ -361,11 +369,15 @@ img{
 
 }
 
-#fitfolio-logo{
-  width: 8%;
-}
-
 .icon{
   width: 40px;
   height: auto;
 }
+
+#workout-bear{
+  width: 8%;
+  cursor: pointer;
+}
+
+
+

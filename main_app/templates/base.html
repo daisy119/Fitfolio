@@ -16,22 +16,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+ <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
   {% block head %}
   {% endblock %}
 </head>
 <body>
   <header>
-    <div class="header-logo-container">
-      <a href="/">
-        <img 
-          id="fitfolio-logo"
-          src="{% static 'images/fitfolio-logo.png' %}"
-          alt="The Fitfolio Logo"
-        >
-      </a>
-    </div>
+
     <nav>
       <ul>
+        <a href="/">
+          <img id= "workout-bear" src="{% static 'images/workoutbear.png' %}" alt="The bear that works out" />
+        </a>
         {% if user.is_authenticated %}
         <li><a href="{% url 'home' %}">Home</a></li>
         <li><a href="{% url 'activity-index' %}">All Activities</a></li>

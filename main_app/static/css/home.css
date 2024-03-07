@@ -48,7 +48,7 @@ main > section {
   background: linear-gradient(to right bottom, rgba(255,255,255,0.7),rgba(255,255,255,0.3));
   border-radius: 2rem;
   z-index: 3;
-  backdrop-filter: blur(2rem);
+  backdrop-filter: blur(1rem);
   box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19); 
 }
 
@@ -177,6 +177,10 @@ margin-top: 130px;
 
 h2{
   font-size:4rem;
+}
+
+#staystrong{
+  width: 100%;
 }
 
 
