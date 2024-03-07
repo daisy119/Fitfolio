@@ -11,7 +11,7 @@ ACTIVITY_TYPE = (
 
 class Activity(models.Model):
   date = models.DateField('Activity date')
-  duration = models.DurationField('Activity duration')
+  duration = models.CharField('Activity duration')
   calorie_burnt = models.IntegerField()
   distance = models.FloatField()
   city = models.CharField(max_length=20)

@@ -30,18 +30,22 @@
   {% endif %}
   </div>
   <div class="activity-details">
-    <h1>A {{ activity.get_activity_type_display  }} in {{activity.city|title}}for {{activity.duration}}hr</h1>
-    <h2>You burned {{activity.calorie_burnt}}cal for {{activity.distance}}miles</h2>
+    <h2>A {{ activity.get_activity_type_display  }} in {{activity.city|title}} </h2>
+    <p>🌟 You have burned <span class="purple-detail">{{activity.calorie_burnt}}</span> cal for <span class="purple-detail">{{activity.distance}}</span> miles for <span class="purple-detail">{{activity.duration}}</span> hr🌟</p>
+
+    <div class="health-box">
     {% if activity.max_heart_rate > 120  %}
-      <h2>Great job.You burn fat and carbonhydrates ub this zone. The goal is to spend 25-35 min here</h2>
+      <p class="health-info">Great job.You burn fat and carbonhydrates in this zone. </p>
     {% else %}
-      <h2>This warm up session helps your body increase fat release and prepares for higher intensities.</h2>
+      <p class="health-info">This warm up session helps your body increase fat release and prepares for higher intensities.</p>
     {% endif %}
-    <p>{{ activity.description }}</p>
+    </div>
+    
+    <p>Description:&nbsp{{ activity.description }}</p><br>
     <div class="activity-actions">
       <a href="{% url 'activity-update' activity.id %}" class="btn warn">Edit</a>
       <a href="{% url 'activity-delete' activity.id %}" class="btn danger">Delete</a>
-    </div>
+    </div><br>
     <h3>Change {{activity.city|title}} City {{ activity.get_activity_type_display  }} Photo</h3>
     <p id="file-name"></p>
     <form 
@@ -57,6 +61,7 @@
       <button type="submit" class="btn submit">Upload Photo</button>
     </form>
   </div>
+
 </section>
 
 {% endblock %}
