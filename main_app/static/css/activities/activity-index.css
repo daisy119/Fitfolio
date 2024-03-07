@@ -2,14 +2,18 @@
   padding: 0 30px;
   display: flex;
   justify-content: center;
+  
   flex-wrap: wrap;
+
 }
 
 .card {
-  width: 275px;
+  width:275px;
   margin: 10px;
-  border: var(--borders);
-  box-shadow: var(--card-box-shadow);
+  border: solid 1px #C68DE2;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+
 }
 
 .card-content {
@@ -35,4 +39,9 @@
 .card p {
   margin: 5px 0;
   font-size: var(--font-reg);
+}
+
+#default-photo{
+  width: 252px;
+  height: 335px;
 }

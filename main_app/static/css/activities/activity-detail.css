@@ -187,6 +187,11 @@
   margin-bottom: 10px;
 }
 
+#default-photo-detail{
+  width: 242px;
+  height: 322px;
+}
+
 @media only screen and (min-width: 768px) {
   .activity-container {
     padding: 35px 30px;

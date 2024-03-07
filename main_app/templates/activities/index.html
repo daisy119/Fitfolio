@@ -36,11 +36,14 @@
           >
         {% else %}
           <img 
-            src="{% static 'images/sk8r-boi-cat.svg' %}" 
-            alt="A skater boy cat"
+            id="default-photo"
+            class="usr-img"
+            src="{% static 'images/running.png' %}" 
+            alt="A walk along ocean"
           >
         {% endif %}
         </div>
+        <div class="words-container">
         <h2 class="card-title">A {{ activity.get_activity_type_display}} in {{ activity.city }}</h2>
         {% if activity.max_heart_rate > 126 %}
           <p>You are in orange zone. You burn fat and carbonhydrates in this zone. THE goal is to spend 23-35 min here </p>
@@ -48,6 +51,7 @@
           <p>You will become healthier in this safe zone but not imporve your fitness level.</p>
         {% endif %}
         <p><small>{{ activity.description }}</small></p>
+      </div>
       </div>
     </a>
     </div>
