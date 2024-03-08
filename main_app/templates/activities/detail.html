@@ -31,7 +31,7 @@
   </div>
   <div class="activity-details">
     <h2>A {{ activity.get_activity_type_display  }} in {{activity.city|title}} </h2>
-    <p>🌟 You have burned <span class="purple-detail">{{activity.calorie_burnt}}</span> cal for <span class="purple-detail">{{activity.distance}}</span> miles for <span class="purple-detail">{{activity.duration}}</span> hr🌟</p>
+    <p>🌟 You have burned <span class="purple-detail">{{activity.calorie_burnt}}</span> cal for <span class="purple-detail">{{activity.distance}}</span> miles in <span class="purple-detail">{{activity.duration}}</span> hr🌟</p>
 
     <div class="health-box">
     {% if activity.max_heart_rate > 120  %}
