@@ -1,7 +1,40 @@
+.box-about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  background-color: #F8DDDC;
+  margin-top: 100px;
+}
+
+.fitfolio-container{
+  /* flex: 1; */
+  padding: 20px;
+}
+
+.aboutme{
+  /* flex: 1; */
+  padding:20px;
+}
+
+.aboutme p{
+  font-size:medium;
+}
+
+.aboutme h3{
+  font-size:medium;
+}
+
 .social-links,.flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.blue-about{
+  color:#C68DE2;
+  text-decoration: underline;
 }
 
 .social-btn {
@@ -51,4 +84,9 @@
 
 #github {
   fill: #333;
+}
+
+#atx-me{
+  width:50%;
+  border-radius: 2rem;
 }

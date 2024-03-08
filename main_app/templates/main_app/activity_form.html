@@ -20,7 +20,7 @@
 {% block content %}
 <div class="page-header">
   {% if activity %}
-    <h1><ion-icon name="bicycle-outline"></ion-icon>&nbsp Edit {{ activity.activity_type }} in {{activity.city}}</h1>
+    <h1><ion-icon name="bicycle-outline"></ion-icon>&nbsp Edit {{ activity.get_activity_type_display  }} in {{activity.city}}</h1>
   {% else %}
     <h1><ion-icon name="bicycle-outline"></ion-icon>&nbsp Add a Activity</h1>
   {% endif %}
