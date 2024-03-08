@@ -18,8 +18,6 @@ body{
 }
 
 .activity-img {
-  /* width: 200%; */
-  /* max-width: 350px; */
   flex:2;
   margin-right: 8px;
   border-radius: 2rem;
@@ -31,7 +29,6 @@ body{
 }
 
 .activity-details {
-  /* width: 98%; */
   flex: 3;
   display: flex;
   flex-direction: column;

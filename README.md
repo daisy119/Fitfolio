@@ -48,7 +48,7 @@ As an adventurous software engineer with a love for both the cityscape and the g
 * [dynamic text](https://alvarotrigo.com/blog/css-text-animations/)
 
 
-# 🧊 Ice Box  
+# 🧊 Next Step  
 - [ ] Responsive Design
 - [ ] Create Add Friends Feature
 - [ ] Add Map Integration

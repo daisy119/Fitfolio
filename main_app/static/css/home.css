@@ -5,7 +5,6 @@ main {
   flex-wrap: wrap;
   height: 100%;
 
-    /* true coder */
     position: relative;
     display: flex;
     justify-content: center;
@@ -70,10 +69,8 @@ main > section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* width: 80%; */
   height: 700px;
   padding: 25px 40px;
-  /* margin-bottom: 10px; */
   left: 50%;
   bottom: 0;
   background-color: #FFEBCD;
@@ -127,16 +124,6 @@ main > section {
   background-size: cover;
   border-radius: 1rem 0 0 1rem;
 }
-
-/* .login-form{
-  height: 700px;
-  padding: 25px 40px;
-  padding-bottom: 10px;
-  margin-bottom: 10px; 
-  left: 50%;
-  bottom: 0;
-  background-color: #FFEBCD;
-} */
 
 h1{
   position: relative;
@@ -206,9 +193,7 @@ h2{
   }
 
   .login {
-    /* border: var(--borders); */
     padding: 20px;
-    /* border-radius: var(--card-border-radius); */
     box-shadow: var(--card-box-shadow);
     width: 100%;
   }
